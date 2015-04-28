@@ -1,0 +1,97 @@
+     ___________________________________________________________________________________________________________________________________________________
+
+   Tax time! Let's assume that we have a much simpler tax code (than the IRS currently has), so that we can calculate taxes easily:
+     * The tax payer is repeatedly prompted to enter either an amount of income (a positive value) or an amount of deduction (a negative value). This
+       continues until a zero value is entered. The positive values are summed to form the income, and the negative values are summed to form the
+       deduction.
+     * The taxable income is computed as the income less the deduction, except in the case that the deduction is greater than than the income in which case
+       the taxable income is zero.
+     * A tax group is calculated from the taxable income:
+          + Greater or equal to $500000 = Super rich
+          + Greater or equal to $200000 = Quite rich
+          + Greater or equal to $100000 = Miami poor
+          + Greater or equal to $50000 = Average
+          + Greater or equal to $20000 = Realistic
+          + Less than $20000 = Poor
+       The tax group is saved as an uppercase letter, one of S, Q, M, A, R, P.
+     * The tax is computed using one of three rates:
+          + The super rich and quite rich get taxed at the high rate of 25%.
+          + The Miami poor get taxed at the medium rate of 10%.
+          + The average and realistic get taxed at the low rate of 3%.
+          + The poor pay no tax.
+       Additionally, the maximal tax is $50000.
+     * The tax information is displayed.
+
+   Here is what a sample run should look like (with the keyboard input shown in italics) ...
+Enter next amount : 125000
+Enter next amount : -250
+Enter next amount : -3000
+Enter next amount : 15000
+Enter next amount : 88000
+Enter next amount : -200
+Enter next amount : 0
+
+Income         = $228000.00
+Deductions     = $  3450.00
+Taxable Income = $224550.00
+Tax group      = Q
+Tax owed       = $ 50000.00
+
+   Here are some guidelines for the design, resulting in the following structure chart and algorithm ...
+
+   [IRS.gif]
+
+1. Input income and deduction
+   1.1 Repeatedly until 0.0 is entered
+       1.1.1 Prompt user
+       1.1.2 Input value
+       1.1.3 If positive
+           1.1.3.1 Add to income
+       1.1.4 If negative
+           1.1.4.1 Add (absolute) to deduction
+2. Compute taxable income
+   2.1 If income >= deduction taxable is income - deduction, else
+   2.2 Taxable is 0.0
+3. Compute tax group
+   3.1 If taxable >= 500000
+       3.1.1 Group is S, else
+   3.2 If taxable >= 200000
+       3.2.1 Group is Q, else
+   3.3 If taxable >= 100000
+       3.3.1 Group is M, else
+   3.4 If taxable >= 50000
+       3.4.1 Group is A, else
+   3.5 If taxable >= 20000
+       3.5.1 Group is R, else
+   3.6 Group is P
+4. Compute tax
+   4.1 Depending on the group
+       4.1.1 For S and Q
+           4.1.1.1 Tax is 25% of taxable
+       4.1.2 For M
+           4.1.2.1 Tax is 10% of taxable
+       4.1.3 For A and R
+           4.1.3.1 Tax is 3% of taxable
+       4.1.4 For P
+           4.1.4.1 Tax is 0.0
+       4.1.5 For other groups
+           4.1.5.1 Error!
+   4.2 If tax > 50000 then
+       4.2.1 tax = 50000
+5. Display tax information
+   5.1 Display income
+   5.2 Display deduction
+   5.3 Display taxable
+   5.4 Display group
+   5.5 Display tax
+
+  You must ...
+
+   Implement the program in C. (5.0%) Internal nodes of the structure chart must be implemented as separate functions. The implementation must follow the
+   design.
+     ___________________________________________________________________________________________________________________________________________________
+
+   Remarks:
+     * The assignment is due next Friday, Feb. 27th, 11:59PM.
+     * You need to submit one .c file with the corresponding C code using submit2 (Please DO NOT submit compil\ ed executables)! Furthermore, the C code
+       needs to compile withou\ t any warnings (otherwise Kyle will not consider it)!

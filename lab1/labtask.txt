@@ -1,0 +1,27 @@
+     ___________________________________________________________________________________________________________________________________________________
+
+   Use a terminal session to:
+    1. Create a text file myStuff.txt and put the answers of the following questions in it:
+          + Whats is the command to create an empty file myStuff.txt (0.1%)?
+          + Make a directory called LabTask1 off your home directory. What would be the complete command (0.1%)?
+          + Move myStuff.txt to the directory LabTask1. What would be the complete command (0.1%)?
+          + Find out your
+               o User ID (the number)
+               o Primary group ID (the number)
+               o The names of all groups you belong to
+               o The absolute path of the bash shell
+               o The absolute path of your home directory
+               o Your PATH environment variable
+            (0.6%)
+    2. Write a shell script called getMyStuff.sh that will provide the above information. Note, the script must be an executable and must work regardless
+       of which directory it is in. Furthermore, just saying cat myStuff.txt is NOT sufficient (0.6%)!
+    3. Read the man pages about the ls and wc commands. Devise a minimal pipeline command that will print the number of files and subdirectories in the
+       current directory (including hidden ones, but not the current and parent directory entries). Put the answer into a text file named myPipe.txt.
+       (0.5%)
+    4. What is the difference between commands wc `grep -l int *` and grep -l int * | wc? How does the output differ? Put the answer into a text file named
+       difference.txt (0.5%).
+     ___________________________________________________________________________________________________________________________________________________
+
+   Remarks:
+     * The assignment is due next Friday, Jan. 30th, 11:59PM.
+     * You need to submit 4 files (myStuff.txt, getMyStuff.sh, myPipe.txt and difference.txt) using submit2!

@@ -1,0 +1,18 @@
+     ___________________________________________________________________________________________________________________________________________________
+
+   Use a terminal session to:
+    1. Create a an empty file called ThatsTheWay.txt containing commands to do the following (not a script, just a file for the TA to grade)(0.25%):
+         1. Get the C program Ticker.c and put in the current directory. Compile it with all warnings and output the executable to Ticker. (You may wish to
+            fix Ticker.c so that there are no warnings. (0.25%)
+         2. A series of commands that (0.5%)
+               o In one go, start Ticker 5 in the background and Ticker 7 in the foreground.
+               o Suspend Ticker 7
+               o List the jobs
+               o Activate Ticker 7 in the background
+               o Bring Ticker 5 into the foreground
+               o Suspend Ticker 5
+               o Kill Ticker 5
+               o Kill Ticker 7
+    2. A pipeline command including grep, that will extract lines containing legal int definitions in Java of GrepExInts and will count the number of
+       lines. (0.5%)
+     ___________________________________________________________________________________________________________________________________________________

@@ -1,0 +1,37 @@
+     ___________________________________________________________________________________________________________________________________________________
+
+   A naturalist is off to explore the amazon jungle, and needs a computer program to record information about all the new species discovered. For each new
+   species it is necessary to store the name (max 128 characters), size (a real number), and the type of animal (an enum type, one of mammal, insect, bird,
+   or fish). Write a program to store and print out the information. (5.0%)
+
+   An array of structures must be used, so that each new species can be recorded in an element of the array. It's not known in advance how many new species
+   will be found, so the program must malloc for an initial array of size 1, and use the doubling realloc technique (as discussed in class) to get more
+   memory as required. You must always check the return value from malloc, as done in the Malloc wrapper function (or just use Malloc :-). Here what a
+   sample run should look like (with the keyboard input shown in italics) ...
+> NewSpecies
+Enter animal information ("exit" to exit)
+What is the name : bloatfish
+What is the size : 12.47
+What is the type : fish
+Enter animal information ("exit" to exit)
+What is the name : stingybeasty
+What is the size : 0.13
+What is the type : insect
+Enter animal information ("exit" to exit)
+What is the name : toothfulsloth
+What is the size : 33.33
+What is the type : mammal
+Enter animal information ("exit" to exit)
+What is the name : exit
+
+The following new species were found:
+bloatfish            has size  12.47 and is a fish
+stingybeasty         has size   0.13 and is a insect
+toothfulsloth        has size  33.33 and is a mammal
+     ___________________________________________________________________________________________________________________________________________________
+
+   Remarks:
+     * The assignment is due next Friday, Apr. 17th, 11:59PM.
+     * You need to submit one .c file with the corresponding \ C code using submit2 (Please DO NOT submit compiled executables) ! Furthermore, the C code
+       needs to compile ... (otherwise Kyle won'\ t look at it)
+     ___________________________________________________________________________________________________________________________________________________

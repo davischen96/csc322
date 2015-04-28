@@ -1,0 +1,32 @@
+mkdir LabTask3 ; cd LabTask3
+touch ThatsTheWay.txt
+# grabs Ticker.c from the website and places it in Ticker.c
+curl http://cs.miami.edu/~wuchtys/CSC322-15S/Content/UNIXUse/MyCode/Ticker.c > Ticker.c
+
+# to compile Ticker.c and place it in Ticker:
+gcc -Wall Ticker.c  -o Ticker
+
+# starts Ticker 5 in the background and Ticker 7 in the foreground
+./Ticker 5 & ./Ticker 7
+
+# to kill Ticker 7 (in the foreground)
+^Z # hit control z (^Z)
+
+# to list the current jobs:
+jobs
+
+# to activate Ticker 7 in the background
+bg + 	# (if Ticker 7 was the most recently stopped process)
+bg %N 	# where N is the id of Ticker 7
+
+# to bring Ticker 5 into the foreground:
+fg -	# if no process has been started since Ticker 7 was started/stopped
+fg %N	# where N is the id of Ticker 5, otherwise
+
+^Z	# to suspend Ticker 5 from the foreground
+
+# kill Ticker 5
+kill %N	# where N is the id of Ticker 5
+# kill Ticker 7
+kill %N # where N is the id of Ticker 7
+

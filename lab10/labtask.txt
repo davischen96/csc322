@@ -1,0 +1,55 @@
+     ___________________________________________________________________________________________________________________________________________________
+
+  Question
+
+   Here's the main function of a program that
+     * Reads in two matrices by prompting the user for their dimensions, dynamically allocating memory from the heap, and reading the values into the
+       memory using row major ordering for the matrix values.
+     * Multiplies the two matrices together and puts the result into another dynamically allocated piece of memory (after checking that the dimensions are
+       appropriate for matric multiplication).
+     * Outputs the two input and the result matrices.
+
+   Write the implementations of the functions input_matrix, matrix_multiply, and output_matrix (5.0%).
+/*---------------------------------------------------------------------------*/
+int main(void) {
+
+    double *m1,*m2,*m3;
+    int m1_rows,m1_columns,m2_rows,m2_columns;
+
+    if (((m1 = input_matrix(&m1_rows,&m1_columns,"Matrix 1")) != NULL) &&
+((m2 = input_matrix(&m2_rows,&m2_columns,"Matrix 2")) != NULL) &&
+((m3 = malloc(m1_rows*m2_columns*sizeof(double))) != NULL)) {
+        printf("Matrix 1\n");
+        output_matrix(m1,m1_rows,m1_columns);
+        printf("Matrix 2\n");
+        output_matrix(m2,m2_rows,m2_columns);
+        if (matrix_multiply(m1,m1_rows,m1_columns,m2,m2_rows,m2_columns,m3)) {
+            printf("Product\n");
+            output_matrix(m3,m1_rows,m2_columns);
+            free(m1);
+            free(m2);
+            free(m3);
+            return(0);
+        } else {
+            printf("Error in dimensions\n");
+            free(m1);
+            free(m2);
+            free(m3);
+            return(-1);
+        }
+    } else {
+        free(m1);
+        free(m2);
+        free(m3);
+        printf("Error allocating memory\n");
+        return(-2);
+    }
+}
+  ____________________________________________________________________________________________________________________________________________________________
+
+Remarks:
+
+     * The assignment is due next Friday, Apr. 10th, 11:59PM.
+     * You need to submit one .c file with the corresponding \ C code using submit2 (Please DO NOT submit compiled executables) ! Furthermore, the C code
+       needs to compile ... (otherwise Kyle won'\ t look at it)
+     ___________________________________________________________________________________________________________________________________________________

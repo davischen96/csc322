@@ -1,0 +1,3 @@
+# to find the number of subdirectories and files, including hidden ones, but
+# not the current and parent directory entries:
+ls -1A | wc - l

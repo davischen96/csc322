@@ -1,0 +1,12 @@
+grep -v "^/" GrepExInts | grep -E "int[ ]+([a-zA-Z][a-zA-Z$_]*[ ]*,?[ ]*)*;" | wc -l
+grep -v "^/" GrepExInts | grep -E "int[ ]+([a-zA-Z$_][a-zA-Z0-9$_]*[ ]*,?[ ]*)+;" | wc -l
+# grabs the lines that do not start with "//" (comments)
+# and pipes these to the next grep
+# which grabs lines that have "int" followed by at least one space
+# then, it matches the pattern
+	# starts with a-zA-Z$_ (all the valid first letters of Java ints)
+	# followed by 0 or more matches of characters in a-zA-Z0-9_$
+	# followed by spaces and possibly a comma, followed by more spaces
+# and repeats it at least once
+# ends with a semicolon
+# and pipes everything to wc -l, which counts lines

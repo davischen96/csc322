@@ -1,0 +1,15 @@
+     ___________________________________________________________________________________________________________________________________________________
+
+   Write a program to display all comments in a C program. The program is typed in at the keyboard, and the output displayed on the screen. It can also be
+   tested on files by redirecting the standard input. Don't forget to handle quoted strings properly.
+
+  You must ...
+
+   Implement the program in C. (5.0%)
+     ___________________________________________________________________________________________________________________________________________________
+
+   Remarks:
+     * The assignment is due next Friday, Mar. 6th, 11:59PM.
+     * You need to submit one .c file with the corresponding C code using submit2 (Please DO NOT submit compiled executables)! Furthermore, the C code
+       needs to compile without any warnings (otherwise Kyle will not consider it)!
+     ___________________________________________________________________________________________________________________________________________________

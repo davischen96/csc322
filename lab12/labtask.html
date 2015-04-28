@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<TITLE>Pointers and Memory</TITLE>
+<HEAD>
+<BODY ALIGN=JUSTIFY>
+<HR><!------------------------------------------------------------------------>
+
+<P>
+Since we talked about pointers, memory allocation and linked lists in
+class, I'd like you to write a program that allows the user
+to: 
+<UL>
+<LI> Enter the names of persons.
+<LI> For each person entered, enter the name of his/her best buddy.
+<LI> Print out the "best buddys"
+</UL>
+
+Here what a sample run should look like (with the user input shown 
+in italics) ...
+<PRE>
+Enter nation name : <EM>Tom</EM>
+Enter nation name : <EM>Betty</EM> 
+Enter nation name : <EM>Martin</EM>
+Enter nation name : <EM>Michael</EM>
+Enter nation name : <EM>Amanda</EM>
+Enter nation name : <EM>Catharine</EM>
+Enter nation name : 
+Enter best ally name for Catharine : <EM>Amanda</EM>
+Enter best ally name for Amanda : <EM>Michael</EM>
+Enter best ally name for Michael : <EM>Martin</EM>
+Enter best ally name for Martin : <EM>Betty</EM>
+Enter best ally name for Betty : <EM>Amanda</EM>
+Enter best ally name for Tom : <EM>Catharine</EM> 
+The best ally of Catharine is Amanda
+The best ally of Amanda is Michael
+The best ally of Michael is Martin
+The best ally of Martin is Betty
+The best ally of Betty is Amanda
+The best ally of Tom is Catharine </PRE>
+
+<H3>You must ...</H3>
+<UL>
+<LI> Implement the program in C. (5.0%)
+     <UL>
+     <LI> Each person's name entered must be stored in a node of a linked list.
+     <LI> Each node of the linked list must contain (only) the persons name, 
+          a pointer to the node for its best buddy, and a pointer to the next 
+          node in the list.
+     <LI> Before the program completes it must explicitly <TT>free</TT> the
+          <TT>malloc</TT>ed memory.
+     </UL>
+</UL>
+
+<HR><!------------------------------------------------------------------------>
+</BODY>
+</HTML>
