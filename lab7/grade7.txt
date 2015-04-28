@@ -1,0 +1,13 @@
+[01;31mAssignment = Lab7
+Student Login Id = rhow322
+--------------------------------------------------------------------------------[0m
+rhow322 5.0
+Roy Howie
+
+
+file: bits.c
+gcc -Wall  bits.c -o bits
+running program: bits
+
+good job!
+

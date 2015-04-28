@@ -1,0 +1,11 @@
+[01;31mAssignment = Lab2
+Student Login Id = rhow322
+--------------------------------------------------------------------------------[0m
+rhow322 4.85
+Roy Howie
+
+please do not submit extra files
+-0.05 you need to escape the '!' character in bash, unless using single quotes. otherwise, it means "last-command"
+-0.1 your ls | grep command isn't quite right.
+in your csc filter, you can just use \b instead of [\t ,\.:;\(\)]
+

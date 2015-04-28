@@ -1,0 +1,9 @@
+[01;31mAssignment = Lab1
+Student Login Id = rhow322
+--------------------------------------------------------------------------------[0m
+rhow322 4.9
+Roy Howie
+
+never put a space between - and an option: wc - l should be wc -l
+-0.1 the absolute path of bash should be retrieved from the command: 'which bash'
+great answer for difference.txt!

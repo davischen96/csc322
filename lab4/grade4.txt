@@ -1,0 +1,12 @@
+[01;31mAssignment = Lab4
+Student Login Id = rhow322
+--------------------------------------------------------------------------------[0m
+rhow322 4.6
+Roy Howie
+
+-0.2 your program gives the wrong output because it truncates integers (while calling a function)
+-0.1 did not use a constant for depth-pressure conversion factor
+-0.1 did not use defined constants for maximum and contingency pressure
+instead of using 65, just use 'A'
+
+please use descriptive variable names in the kangaroo program

@@ -1,0 +1,4 @@
+[01;31mAssignment = Lab12
+Student Login Id = rhow322
+--------------------------------------------------------------------------------[0m
+The grade for 'Lab12' is not available.

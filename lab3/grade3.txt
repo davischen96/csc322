@@ -1,0 +1,16 @@
+[01;31mAssignment = Lab3
+Student Login Id = rhow322
+--------------------------------------------------------------------------------[0m
+rhow322 4.8
+Roy Howie
+
+you were only supposed to submit one file for this lab task, please dont
+submit binary files, or files that we provide for you.
+submit only your work
+
+no need to use multiple grep commands, just specify that between the beginning
+of the line and the int there should only be whitespace (\s)
+
+-0.2 your grep command(s) do not handle multiple declarations correctly
+
+

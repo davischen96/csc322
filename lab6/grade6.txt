@@ -1,0 +1,23 @@
+[01;31mAssignment = Lab6
+Student Login Id = rhow322
+--------------------------------------------------------------------------------[0m
+rhow322 4.7
+Roy Howie
+
+
+file: comments.c
+gcc -Wall  comments.c -o comments
+running program: comments
+passed test 1
+passed test 2
+passed test 3
+passed test 4
+-0.2 failed test 5
+
+your program does not account for escaped quotation marks in strings.
+
+-0.1 error on test 6
+
+your program does not handle the possibility of comments existing within other comments
+
+passed test 7

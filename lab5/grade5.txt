@@ -1,0 +1,29 @@
+[01;31mAssignment = Lab5
+Student Login Id = rhow322
+--------------------------------------------------------------------------------[0m
+rhow322 4.3
+Roy Howie
+
+COMPILES CLEAN
+running compiled binary:
+Script started on Tue 10 Mar 2015 06:45:37 PM EDT
+Enter an amount: 125000
+-250
+-3000
+15000
+88000
+-200
+0
+Enter an amount: Enter an amount: Enter an amount: Enter an amount: Enter an amount: Enter an amount: 
+Income		= $ 228000.00
+Deductions	= $   3450.00
+Taxable Income	= $ 224550.00
+Tax Group	= S
+Tax Owed	= $  50000.00
+~~~~~ end of output ~~~~~
+
+-0.1 your program calculated the incorrect tax group
+-0.3 the output must be displayed in a separate function
+
+-0.1 you did not use a constant for the maximum tax value
+-0.2 you were supposed to compute the tax rate using the tax group, not the taxable income ranges
